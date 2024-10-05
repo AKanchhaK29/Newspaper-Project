@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Navigation Bar</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="d-flex" id="wrapper">
+    <div class="bg-dark" id="sidebar-wrapper">
+      <div class="sidebar-heading text-white p-3">TheAdmin</div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Dashboard</a>
+        <a href="#demosSubmenu" class="list-group-item list-group-item-action bg-dark text-white d-flex justify-content-between align-items-center" data-bs-toggle="collapse">
+          Demos
+          <i class="arrow bi bi-chevron-down"></i>
+        </a>
+        <div id="demosSubmenu" class="collapse">
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white ps-4">Demo 1</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white ps-4">Demo 2</a>
+        </div>
+        
+        <a href="#layoutSubmenu" class="list-group-item list-group-item-action bg-dark text-white d-flex justify-content-between align-items-center" data-bs-toggle="collapse">
+          Layout
+          <i class="arrow bi bi-chevron-down"></i>
+        </a>
+        <div id="layoutSubmenu" class="collapse">
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white ps-4">Grid</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white ps-4">Sidebar</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white ps-4">Topbar</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white ps-4">Header</a>
+          <a href="#" class="list-group-item list-group-item-action bg-dark text-white ps-4">Footer</a>
+        </div>
+
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Content</a>
+      </div>
+    </div>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Welcome to the Newspaper Website</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
